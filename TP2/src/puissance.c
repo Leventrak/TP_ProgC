@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int a = 2;     
-    int b = 3;     
+    int a = 2;  // base
+    int b = 3;  // exposant
     int resultat = 1;
-    
-    for (int i = 0; i != b; i++) {
+    int i;
+
+    // Calcul de a puissance b (a^b)
+    for(i = 0; i < b; i++) {
         resultat *= a;
     }
 
-    printf("%d puissance %d est %d\n", a, b, resultat);
+    // Affichage du résultat
+    printf("%d élevé à la puissance %d est égal à %d\n", a, b, resultat);
 
     return 0;
 }
